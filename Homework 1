@@ -30,9 +30,9 @@ cbind(true_values, estimated_values)
 calc_R2 <- function(model, data) {
   
   # Keep only complete cases used by the model
-  model_data <- data[complete.cases(data[, c("SGCN_simulated", "participants")]), ]
+  model_data <- data[complete.cases(data[, c("SGCN", "participants")]), ]
   
-  y_obs <- model_data$SGCN_simulated
+  y_obs <- model_data$SGCN
   y_pred <- predict(model, newdata = model_data)
   
   ss_total <- sum((y_obs - mean(y_obs))^2)
@@ -44,5 +44,5 @@ calc_R2 <- function(model, data) {
 
 calc_R2(model, df)
 
+#check model R2
 summary(model)$r.squared
-calc_R2(model, df)
