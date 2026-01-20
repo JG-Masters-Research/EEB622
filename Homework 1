@@ -1,4 +1,4 @@
-df <- read.csv("https://raw.githubusercontent.com/JG-Masters-Research/EEB622/refs/heads/main/funds_species_participants.csv?token=GHSAT0AAAAAADTVHEBH575PQ7GT7TJCOOKU2LPY5BQ")
+df <- read.csv("https://raw.githubusercontent.com/JG-Masters-Research/EEB622/refs/heads/main/funds_species_participants.csv")
 
 set.seed(1)
 
