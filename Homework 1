@@ -1,4 +1,4 @@
-df <- read.csv("C:/Users/granj/Downloads/funds_species_participants.csv")
+df <- read.csv("https://raw.githubusercontent.com/JG-Masters-Research/EEB622/refs/heads/main/funds_species_participants.csv?token=GHSAT0AAAAAADTVHEBH575PQ7GT7TJCOOKU2LPY5BQ")
 
 set.seed(1)
 
